@@ -1,17 +1,16 @@
 <template>
   <div class="d-flex flex-column min-vh-100">
     <NavBar />
-    <Intro ref="intro"/>
-    <About ref="about"/>
+    <Intro ref="intro" />
+    <About ref="about" />
     <Mission />
-    <Projects ref="projects"/>
-    <Contact ref="contact"/>
+    <Projects ref="projects" />
+    <Contact ref="contact" />
     <Footer />
   </div>
 </template>
 
 <script setup>
-
   useHead({
     title: "Maggie Cameron",
     link: [
@@ -33,9 +32,8 @@
 </script>
 
 <style>
-body {
-  font-family: "adobe-clean",
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .d-flex {
   display: flex;
@@ -49,5 +47,4 @@ body {
 .flex-grow-1 {
   flex-grow: 1;
 }
-
 </style>

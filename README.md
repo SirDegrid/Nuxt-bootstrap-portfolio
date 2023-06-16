@@ -1,43 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 / Vue3 Software Engineer Portfolio
+This simple portfolio was designed using Nuxt3/Vue3 and Bootstrap. It is a single page app with scroll to navigation. There is a Express server within the app to handle contact form requets.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# Nuxt-bootstrap-portfolio
+## Technology Used 
+express 4.18.2
+nodemailer 6.9.3
+vue3-lottie 2.7.0
+fortawesome/free-brands-svg-icons
+Vue 3 / Nuxt 3
+bootstrap 5.2.0
+google fonts 
+express-validator: 7.0.1
+adobe XD 
+javaScript 
+CSS 

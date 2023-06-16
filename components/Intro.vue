@@ -1,20 +1,45 @@
 <template>
-    <section id="intro" class="section text-center">
-      <div class="hello-world d-flex align-items-center justify-content-center">
-        <h1>Hello, world!</h1>
-      </div>
-    </section>
-  </template>
-  
-  <style>
-  .hello-world {
-    color: #008083;
+  <client-only>
+    <div class="animation-container">
+      <Vue3Lottie
+        :animationData="animationData"
+        :height="200"
+        :width="200"
+      />
+    </div>
+  </client-only>
+</template>
+
+<script>
+import { ref, onMounted } from 'vue'
+import helloWorldAnimation from '~/static/hello_world.json'
+
+export default {
+  setup() {
+    const animationData = ref({})
+
+    onMounted(() => {
+      animationData.value = helloWorldAnimation
+    })
+
+    return {
+      animationData
+    }
   }
-  
-  .section {
-    padding-top: 350px;
-    position: relative;
-    min-height: 500px;
-  }
-  </style>
-  
+}
+</script>
+
+<style scoped>
+body {
+  background-color: white;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 70px);
+  width: 100%;
+  margin-top: 70px;
+}
+</style>
